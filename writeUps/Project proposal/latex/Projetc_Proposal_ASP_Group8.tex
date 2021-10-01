@@ -1,0 +1,101 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ifcvprfinal\pagestyle{empty}\fi
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{Anomalies Detection In DNA Sequences Using Markov Chains}
+
+\author{Prierette M. Mastel \quad Pamely Zantou \quad Florent C. Bang Njenjock \quad Cedric P. E. Manouan \\
+Carnegie Mellon University\\
+{\tt\small \{pmahorom, pzantou, fbangnje, cmanouan\}@andrew.cmu.edu}
+}
+
+
+\maketitle
+%\thispagestyle{empty}
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+    Rare genetic disorders are rooted in mis-sequencing the
+    genome in DNA \cite{posey}. Detecting anomalies in genomic sequences, finding the right genomic code, and reconstructing
+    defective sequences represent great challenges and subjects
+    of important and expensive research work in medical care.
+    Many revolutionary approaches in genomic medicine, bioinformatics, and mathematics have been developed in biological
+    sequence analysis to minimize and even completely cure
+    genetic disorders. This work aims to model DNA Sequence
+    using Markov Chains and apply the resulting model to detect anomalies in a given sequence.
+\end{abstract}
+
+%%%%%%%%% BODY TEXT
+%%\section{Introduction}
+%%{
+%%}
+
+%-------------------------------------------------------------------------
+\section{Background and rationale}
+ {
+    Over the years several models have been used for modelling DNA sequences among those include: Wright-Fisher model, Infinite alleles model, Infinite sites model, Moran Model and so on \cite{durret}.
+
+ }
+%-------------------------------------------------------------------------
+\section{Research questions, aims and objectives}
+ {
+    Our main research question is: how can we model DNA sequences using Markov chains in order 
+    to use the resulting representation to detect disorders/anomalies in a given DNA sequence?\\
+    Trying to answer the above question boils down to two problems that need to be addressed:
+    \begin{itemize}
+        \item How to model DNA sequences using Markov chains?
+        \item How to use this model to detect anomalies in DNA sequences \cite{scientific_american}?
+    \end{itemize}
+
+ }
+%-------------------------------------------------------------------------
+
+\section{Methodology}
+ {
+    For the purpose of this research we will be using Markov chains to model DNA sequences \cite{singh}. Our model will be based on the four building blocks of a DNA sequence which are the nucleotides: Adenine (A), Thymine (T),
+    Guanine (G) and Cytosine (C).
+    Our approach to modeling DNA sequences is divided into two parts: on the one hand, we will work on representing nucleotides and the relation between them in a given sequence (graph of states); and on the other hand, we will compute the transition probabilities within the resulting graph of states
+ }
+%-------------------------------------------------------------------------
+
+%\section{Results}
+ %{
+ %}
+%-------------------------------------------------------------------------
+
+ %\section{Discussion}
+ %{
+ %}
+%-------------------------------------------------------------------------
+%\section{Conclusion}
+%{
+%}
+
+ {\small
+  \bibliographystyle{ieee}
+  \bibliography{egbib}
+ }
+
+\end{document}
