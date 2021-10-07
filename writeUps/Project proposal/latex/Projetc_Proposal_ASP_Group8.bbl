@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{krawetz2003introduction}
+
+
+\bibitem{scientific_american}
+"what is known about the function of introns, the nonencoding sequences in
+  genes?".
+\newblock {\em Scientific American}, 1999.
+
+\bibitem{forward_backward}
+R.~h.~Sundaram.
+\newblock The baaum-welch algorithm.
+\newblock 2000.
+
+\bibitem{chakravarthy2004autoregressive}
+C.~Nirnjan et~al.
+\newblock "autoregressive modeling and feature analysis of dna sequences".
+\newblock {\em EURASIP Journal on Applied Signal Processing}, 1(13-28), 2004.
+
+\bibitem{posey}
+J.~E. posey.
+\newblock "genome sequencing and implications for rare disorders".
+\newblock {\em Orphanet J Rare Dis}, 14(153), 2019.
+
+\bibitem{singh}
+G.~B. Singh.
+\newblock {\em "Statistical Modeling of DNA Sequences and Patterns.
+  Introduction to Bioinformatics"}.
+\newblock Humana Press, Totowa, NJ, 2003.
+
+\bibitem{tommy}
+M.~D.~B. Tommy~Kaplan.
+\newblock {\em Methods in Cell Biology}.
+\newblock 2012.
+
+\end{thebibliography}
