@@ -22,7 +22,7 @@
 % Pages are numbered in submission mode, and unnumbered in camera-ready
 \ifcvprfinal\pagestyle{empty}\fi
 \begin{document}
-
+    
 %%%%%%%%% TITLE
 \title{Anomalies Detection In DNA Sequences Using Markov Chains}
 
@@ -31,9 +31,8 @@ Carnegie Mellon University\\
 {\tt\small \{pmahorom, pzantou, fbangnje, cmanouan\}@andrew.cmu.edu}
 }
 
-
 \maketitle
-%\thispagestyle{empty}
+\thispagestyle{empty}
 
 %%%%%%%%% ABSTRACT
 \begin{abstract}
@@ -43,8 +42,8 @@ Carnegie Mellon University\\
     of important and expensive research work in medical care.
     Many revolutionary approaches in genomic medicine, bioinformatics, and mathematics have been developed in biological
     sequence analysis to minimize and even completely cure
-    genetic disorders. This work aims to model DNA Sequence
-    using Markov Chains and apply the resulting model to detect anomalies in a given sequence.
+    genetic disorders. This work aims to model DNA Sequences
+    using discrete-time Markov chains and apply the resulting model to detect anomalies in a given sequence.
 \end{abstract}
 
 %%%%%%%%% BODY TEXT
@@ -63,7 +62,7 @@ Carnegie Mellon University\\
       \item \textbf{Gene} 
       \par A gene is the basic part physical and functional unit of heredity. Genes are passed on from parent to child. They     are made up of DNA, represent the coded part of DNA and carry a set of specific instructions to code some molecules such as proteins. Humans for example have between 30.000 and 100000 genes \cite{krawetz2003introduction}. There are two classes of genes:
       \begin{enumerate}
-          \item genes that are trasncribed into RNAs and are translated into polypeptide chains.
+          \item genes that are transcribed into RNAs and are translated into polypeptide chains.
           \item genes whose transcripts (tRNAs, rRNAs, snRNAs) are used directly.
       \end{enumerate}
 
@@ -75,11 +74,56 @@ Carnegie Mellon University\\
          DNA is often found as a single-stranded polynucleotide, it assumes its most stable form when double stranded. These two strands are complementary
           and form a double helix weakly bonded by hydrogen bonds between the nucleotides. \textbf{A} in one strand always pairs with a \textbf{T} in
            the other strand, and each \textbf{C} always pairs with a \textbf{G}. The synthesis of proteins is governed by certain regions in the DNA called protein coding regions or genes.
-            There are 64 possible nucleotide triplets $((nucleotide alphabet size)word length = 4^3 )$ called codons, and mapped into 20 amino acids
+            There are 64 possible nucleotide triplets \((\text{nucleotide alphabet size})^{\text{word length}} = 4^3 \) called codons, and mapped into 20 amino acids
              that bond together to form proteins. DNA sequence analysis consists in automatically interpreting DNA sequences and provide the location and function of protein coding regions.
               If a given DNA sequence is not a protein coding regions the next step will be to accurately identify the protein coding regions and thus predict the protein that will be generated
                using the information in these segments. \cite{chakravarthy2004autoregressive} Thanks to bioinformatics, many techniques have been developed to efficiently model DNA sequences.
-   \end{itemize}
+   
+   \item \textbf{DNA sequence models}
+   \par{
+       DNA sequences analysis has been and continue to be a challenging topic in the research domain. However, to be able to do these analyzes, one needs a way to represent the DNA sequence into a suitable format 
+       that helps to extract information and do some computation.
+       \begin{enumerate}[i.]
+           \item \textbf{Probabilistic approaches to DNA sequence modeling}
+           \begin{enumerate}[a.]
+               \item \textbf{The Independent Identically Distributed (IID) model}: This model assign the same chance to each nucleotide to appear at any position within the sequence (uniformly likely).
+               In addition, each nucleotide appears independently of the others. The probability of any nucleotide \(X\) to occur in a sequence \(S\) of length \(L_S\) is defined as following (G. Singh et al. 2003):
+               \begin{equation}
+                   P_X = \frac{n_{X}(S)}{L_S}\\
+               \end{equation}
+               where \(n_X\) is the number of occurrence of the base X in S.\\
+               Then the probability of a pattern \(p\) to occur can be obtained with equation \ref{eq2}
+               \begin{equation}
+                    P(p | S) = \prod_{i=1}^{L_p} P(p_i)
+                   \label{eq2}
+               \end{equation}
+               where \(P(p_i)\) is the probability of nucleotide \(p_i\) at position \(i\) along a pattern p of length \(L_p\).\\
+               
+               \item \textbf{Discrete-time Markov chains}: In this model, the value of the random variable X any given time step depends only on the previous value.
+               This model has 20 parameters: the probabilities of each nucleotide to occur (\(P_A, P_T, P_C, P_G\)) and the probabilities of each \textit{dinucleotide} to occur (\(P_{AA}, P_{AC}, ...\)).
+               The first set of parameters is computed using equation \ref{eq2}.
+               And the second set of parameters (the transition probabilities) is obtained \cite{singh} using Bayes Rule (\ref{eq3}):\\
+               \begin{equation}
+                   P(\alpha|\beta) = \frac{P(\alpha \beta)}{P(\beta)}
+                \label{eq3}
+               \end{equation}
+               where \(\alpha\) and \(\beta\) are different nucleotides and \(\alpha \beta \) is a dinucleotide (compound with two nucleotides).\\ 
+               Thus the probability of occurrence of a pattern p is given by equation \ref{eq4}:
+               \begin{equation}
+                   P(p|S) = P(p_1)\prod_{i=2}^{L_p} P(p_i)
+                \label{eq4}
+               \end{equation}
+               \item \textbf{Hidden Markov Models(HMMs)} \cite{tommy}: They are a family of probabilistic models that are used to model observations within a series of observation. In this particular model,
+               the observations are modeled using another series which is a series of unobserved transitions between the actual states of the model. In HMMs, in addition to transition probabilities, we also have 
+               emission probabilities describing the probabilities of getting any output signal in a given state.
+               HMMs are often combined with the forward-backward \cite{forward_backward} algorithm in order to compute the probability of a state at a given position of the DNA Sequence.\\ 
+               
+               \item \textbf{Autoregressive (AR) models}\cite{chakravarthy2004autoregressive}: It is another family of models that are used in random processes analysis. Their particularity is that a variable is forecasted
+               using a linear combination of its previous values as a regression of the variable against itself.
+        \end{enumerate}
+       \end{enumerate}
+   }
+    \end{itemize}
  }
 %-------------------------------------------------------------------------
 \section{Research questions, aims and objectives}
@@ -96,10 +140,28 @@ Carnegie Mellon University\\
 %-------------------------------------------------------------------------
 
 \section{Methodology}
- {
-    For the purpose of this research we will be using Markov chains to model DNA sequences \cite{singh}. Our model will be based on the four building blocks of a DNA sequence which are the nucleotides: Adenine (A), Thymine (T),
-    Guanine (G) and Cytosine (C).
-    Our approach to modeling DNA sequences is divided into two parts: on the one hand, we will work on representing nucleotides and the relation between them in a given sequence (graph of states); and on the other hand, we will compute the transition probabilities within the resulting graph of states
+ {  
+    \subsection{Modeling}  
+    {
+        The overall goal of our work is to be able to identify specific patterns within a DN sequence in order to tell whether or not that sequence has some anomalies.\\
+        For the purpose of this research we will be using discrete-time Markov chains as DNA sequences model \cite{singh}. 
+       Our model will be based on the four nucleotides (A, T, G, C) which will be considered as the states of the system.
+       This approach to modeling DNA sequences is divided into two parts: on the one hand, we will work on representing nucleotides and the relationships between them in a given DNA sequence (graph of states); 
+           and on the other hand, we will compute the transition probabilities within the resulting graph to end up with the probabilistic graph representing the chain.
+    }  
+
+    \subsection{Anomaly detection}
+    {What we define as an anomaly is any nucleotides sequence that is known as the sequence of a particular disease. Since this pattern must occur at a precise location of the DNA sequence to be considered as an actual 
+    anomaly, we are considering to use a threshold before returning the binary detection output.\\ 
+    To achieve anomalies detection given a DNA sequence we plan to use the following steps:
+    \begin{enumerate}[a.]
+        \item Compute the first set of parameters (individual nucleotides)
+        \item Compute the second set of parameters (dinucleotides)
+        \item Select anomaly pattern to match
+        \item Apply a threshold to the resulting probability 
+        \item Return a binary signal (Anomaly detected or not)
+    \end{enumerate}
+    }
  }
 %-------------------------------------------------------------------------
 
