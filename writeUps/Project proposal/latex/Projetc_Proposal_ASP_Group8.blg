@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Projetc_Proposal_ASP_Group8.aux
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+The style file: ieee.bst
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+Database file #1: egbib.bib
+Warning--to sort, need author or key in krawetz2003introduction
+Warning--to sort, need author or key in scientific_american
+Warning--empty author in krawetz2003introduction
+Warning--empty title in krawetz2003introduction
+Warning--empty journal in krawetz2003introduction
+Warning--empty year in krawetz2003introduction
+Warning--empty author in scientific_american
+Warning--empty journal in forward_backward
+Warning--empty publisher in tommy
+You've used 7 entries,
+            2120 wiz_defined-function locations,
+            529 strings with 4443 characters,
+and the built_in function-call counts, 1435 in all, are:
+= -- 127
+> -- 43
+< -- 0
++ -- 20
+- -- 12
+* -- 84
+:= -- 245
+add.period$ -- 18
+call.type$ -- 7
+change.case$ -- 23
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 74
+empty$ -- 134
+format.name$ -- 12
+if$ -- 291
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 9
+newline$ -- 35
+num.names$ -- 10
+pop$ -- 41
+preamble$ -- 1
+purify$ -- 19
+quote$ -- 0
+skip$ -- 51
+stack$ -- 0
+substring$ -- 36
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 9
+while$ -- 10
+width$ -- 8
+write$ -- 64
+(There were 9 warnings)
