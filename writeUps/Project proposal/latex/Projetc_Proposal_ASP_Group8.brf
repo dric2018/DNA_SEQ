@@ -5,8 +5,9 @@
 \backcite {chakravarthy2004autoregressive}{{1}{1}{Item.2}}
 \backcite {chakravarthy2004autoregressive}{{1}{1}{Item.2}}
 \backcite {singh}{{2}{ib}{Item.5}}
-\backcite {tommy}{{2}{ic}{Item.6}}
-\backcite {forward_backward}{{2}{ic}{Item.6}}
-\backcite {chakravarthy2004autoregressive}{{2}{id}{Item.7}}
-\backcite {scientific_american}{{2}{2}{section.2}}
-\backcite {singh}{{2}{3.1}{subsection.3.1}}
+\backcite {SNP_cystic_fibrosis}{{2}{2}{section.2}}
+\backcite {SNP_identification}{{2}{2}{section.2}}
+\backcite {Newborn_screening_for_CF}{{2}{2}{section.2}}
+\backcite {disease_modifying_genes}{{2}{2}{section.2}}
+\backcite {scientific_american}{{2}{3}{section.3}}
+\backcite {singh}{{2}{4.1}{subsection.4.1}}

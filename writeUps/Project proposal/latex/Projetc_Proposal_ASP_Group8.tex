@@ -27,9 +27,9 @@
 %%%%%%%%% TITLE
 \title{Anomalies Detection In DNA Sequences Using Markov Chains}
 
-\author{Prierette M. Mastel \quad Pamely Zantou \quad Florent C. Bang Njenjock \quad Cedric P. E. Manouan \\
+\author{Pierette M. Mastel \quad Pamely Zantou \quad Florent C. Bang Njenjock \quad Cedric P. E. Manouan \\
 Carnegie Mellon University\\
-{\tt\small \{pmahorom, pzantou, fbangnje, cmanouan\}@andrew.cmu.edu}
+{\tt\small \{pmahoro, pzantou, fbangnje, cmanouan\}@andrew.cmu.edu}
 }
 
 \maketitle
@@ -91,6 +91,7 @@ Carnegie Mellon University\\
                In addition, each nucleotide appears independently of the others. The probability of any nucleotide \(X\) to occur in a sequence \(S\) of length \(L_S\) is defined as following (G. Singh et al. 2003):
                \begin{equation}
                    P_X = \frac{n_{X}(S)}{L_S}\\
+                   \label{eq1}
                \end{equation}
                where \(n_X\) is the number of occurrences of the base X in S.\\
                Then the probability of a pattern \(p\) to occur can be obtained with equation \ref{eq2}
@@ -102,7 +103,7 @@ Carnegie Mellon University\\
                
                \item \textbf{Discrete-time Markov chains}: In this model, the value of the random variable X any given time step depends only on the previous value.
                This model has 20 parameters: the probabilities of each nucleotide to occur (\(P_A, P_T, P_C, P_G\)) and the probabilities of each \textit{dinucleotide} to occur (\(P_{AA}, P_{AC}, ...\)).
-               The first set of parameters is computed using equation \ref{eq2}.
+               The first set of parameters is computed using equation \ref{eq1}.
                And the second set of parameters (the transition probabilities) is obtained \cite{singh} using Bayes Rule (\ref{eq3}):\\
                \begin{equation}
                    P(\alpha|\beta) = \frac{P(\alpha \beta)}{P(\beta)}
@@ -114,18 +115,24 @@ Carnegie Mellon University\\
                    P(p|S) = P(p_1)\prod_{i=2}^{L_p} P(p_i)
                 \label{eq4}
                \end{equation}
-               \item \textbf{Hidden Markov Models(HMMs)} \cite{tommy}: They are a family of probabilistic models used to model observations within a series. In this particular model,
-                observations are modeled using another series which is a series of unobserved transitions between the actual states of the model. In HMMs, in addition to transition probabilities, we also have 
-               \textit{emission probabilities} describing the probabilities of getting any output signal in a given state.
-               HMMs are often combined with the forward-backward \cite{forward_backward} algorithm in order to compute the probability of a state at a given position of the DNA Sequence.\\ 
-               
-               \item \textbf{Autoregressive (AR) models}\cite{chakravarthy2004autoregressive}: It is another family of models used in random processes analysis. Their particularity is that a variable is forecasted
-               using a linear combination of its previous values as a regression of the variable against itself.
-        \end{enumerate}
+               \end{enumerate}
        \end{enumerate}
    }
     \end{itemize}
  }
+
+ %-------------------------------------------------------------------------
+\section{Literature review}
+{
+
+Mutations in gene may lead to severe diseases. In the case of Cystic Fibrosis (CF), studies were conduced and revealed that some Single Nucleotide Polymorphisms (SNPs) may be associated with presence of chronic rhinosinusitis (CRS) in certain populations, which is almost always developed by CF patients  \cite[Bejamen Hull et al., 2017]{SNP_cystic_fibrosis}. Identifying those mutations quickly is crucial since they might have a high influence on disease severity in different manners \cite[Franziska Gisler, 2013]{SNP_identification}. 
+Thus, strategies for newborn screening for CF have been evaluated and as a result, it was shown that immunioreactive trypsinogen (IRT), a test that screens for a protein made by the pancreas, seems to be the most cost-efficient among others \cite[Masja Schmidt et al., 2018]{Newborn_screening_for_CF}. In case of a positive initial IRT test, another test or a DNA is carried out. This DNA test can lead to the identification of modifier genes (genes than single mutated gene) which affect disease expression.
+And the most common method to study association between genetic variations in modifier genes and clinical phenotypes is SNPs identification \cite[Martijn Slieker et al., 2005]{disease_modifying_genes}. 
+
+
+}
+%-------------------------------------------------------------------------
+
 %-------------------------------------------------------------------------
 \section{Research questions, aims and objectives}
  {

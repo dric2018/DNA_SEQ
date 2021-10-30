@@ -12,47 +12,45 @@ Warning--empty title in krawetz2003introduction
 Warning--empty journal in krawetz2003introduction
 Warning--empty year in krawetz2003introduction
 Warning--empty author in scientific_american
-Warning--empty journal in forward_backward
-Warning--empty publisher in tommy
-You've used 7 entries,
+You've used 9 entries,
             2120 wiz_defined-function locations,
-            529 strings with 4443 characters,
-and the built_in function-call counts, 1435 in all, are:
-= -- 127
-> -- 43
+            546 strings with 4994 characters,
+and the built_in function-call counts, 1978 in all, are:
+= -- 186
+> -- 81
 < -- 0
-+ -- 20
-- -- 12
-* -- 84
-:= -- 245
-add.period$ -- 18
-call.type$ -- 7
-change.case$ -- 23
++ -- 33
+- -- 24
+* -- 114
+:= -- 354
+add.period$ -- 24
+call.type$ -- 9
+change.case$ -- 32
 chr.to.int$ -- 0
 cite$ -- 16
-duplicate$ -- 74
-empty$ -- 134
-format.name$ -- 12
-if$ -- 291
+duplicate$ -- 92
+empty$ -- 163
+format.name$ -- 24
+if$ -- 402
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 9
-newline$ -- 35
-num.names$ -- 10
-pop$ -- 41
+int.to.str$ -- 9
+missing$ -- 10
+newline$ -- 45
+num.names$ -- 14
+pop$ -- 34
 preamble$ -- 1
-purify$ -- 19
+purify$ -- 25
 quote$ -- 0
-skip$ -- 51
+skip$ -- 78
 stack$ -- 0
-substring$ -- 36
-swap$ -- 5
+substring$ -- 45
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 24
-warning$ -- 9
-while$ -- 10
-width$ -- 8
-write$ -- 64
-(There were 9 warnings)
+type$ -- 34
+warning$ -- 7
+while$ -- 14
+width$ -- 10
+write$ -- 90
+(There were 7 warnings)
