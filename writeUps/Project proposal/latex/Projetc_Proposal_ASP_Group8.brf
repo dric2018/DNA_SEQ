@@ -1,10 +1,8 @@
 \backcite {posey}{{1}{(document)}{Doc-Start}}
-\backcite {krawetz2003introduction}{{1}{1}{section.1}}
-\backcite {krawetz2003introduction}{{1}{1}{section.1}}
-\backcite {krawetz2003introduction}{{1}{1}{Item.2}}
-\backcite {chakravarthy2004autoregressive}{{1}{1}{Item.2}}
-\backcite {chakravarthy2004autoregressive}{{1}{1}{Item.2}}
-\backcite {singh}{{2}{ib}{Item.5}}
+\backcite {riordan1989identification}{{1}{1}{section.1}}
+\backcite {tsui1992spectrum}{{1}{1}{section.1}}
+\backcite {tsui1992spectrum}{{1}{1}{section.1}}
+\backcite {singh}{{1}{ib}{Item.3}}
 \backcite {SNP_cystic_fibrosis}{{2}{2}{section.2}}
 \backcite {SNP_identification}{{2}{2}{section.2}}
 \backcite {Newborn_screening_for_CF}{{2}{2}{section.2}}

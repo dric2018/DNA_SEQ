@@ -55,30 +55,14 @@ Carnegie Mellon University\\
 %-------------------------------------------------------------------------
 \section{Background and rationale}
  {
-   \begin{itemize}
-      \item \textbf{Genome}
-      \par Genome refers to the complete set of genetic information (hereditary information) found within an individual organism \cite{krawetz2003introduction}.
-        It combines   both the genes and the non-coding sequences of the DNA.
+    \par Cystic fibrosis (CF) is a severe autosomal recessive disease characterized by a varied degree of chronic obstructive lung disease and pancreatic
+    enzyme insufficiency. An elevated sweat electrolyte concentration is another symptoms of (CF) \cite{riordan1989identification}\cite{tsui1992spectrum}.
+    CF is caused by the mutation of Cystic Fibrosis Transmembrane conductance Regulator (CFTR) gene. More specifically, a 3bp deletion of CFTR would remove 
+    the phenylalanine residue at amino acid position 508. Although, the major mutation causing CF is the later, there are almost 300 sequence alterations 
+    identified in the CFTR and responsible of CF. \cite{tsui1992spectrum}. Large deletions spanning multiple exons of the CFTR, multiple substitutions of 
+    a single base pair can be found in many places in the gene.
 
-      \item \textbf{Gene} 
-      \par Gene is the basic physical and functional unit of heredity. Genes are passed on from parent to child. They     are made up of DNA, represent the coded part of DNA and carry a set of specific instructions to code some molecules such as proteins. Humans for example have between 30.000 and 100000 genes \cite{krawetz2003introduction}. There are two classes of genes:
-      \begin{enumerate}
-          \item genes that are transcribed into RNAs and are translated into polypeptide chains.
-          \item genes whose transcripts (tRNAs, rRNAs, snRNAs) are used directly.
-      \end{enumerate}
-
-      \item \textbf{DNA sequence analysis}
-      \par Deoxyribonucleic acid (DNA) is the molecule that contains the genetic code needed to produce molecules of living cells such as
-       proteins. \cite{krawetz2003introduction}. Proteins are made of amino acids and are responsible for many vital functions such as
-        transportation, metabolism, movement, structural support, etc. DNA is formed from 4 basic subunits or nucleotides, namely, adenine
-        (\textbf{A}), cytosine (\textbf{C}), thymine (\textbf{T}), and guanine (\textbf{G}). \cite{chakravarthy2004autoregressive} Although
-         DNA is often found as a single-stranded polynucleotide, it assumes its most stable form when double-stranded. These two strands are complementary
-          and form a double helix weakly bonded by hydrogen bonds between the nucleotides. \textbf{A} in one strand always pairs with a \textbf{T} in
-           the other strand, and each \textbf{C} always pairs with a \textbf{G}. The synthesis of proteins is governed by certain regions in the DNA called protein-coding regions or genes.
-            There are 64 possible nucleotide triplets (\((\text{nucleotide alphabet size})^{\text{word length}} = 4^3 \)) called \textit{codons}, and mapped into 20 amino acids
-             that bond together to form proteins. DNA sequence analysis consists in automatically interpreting DNA sequences and provide the location and function of protein-coding regions.
-              If a given DNA sequence is not a protein-coding regions the next step will be to accurately identify the protein-coding regions and thus predict the protein that will be generated
-               using the information in these segments. \cite{chakravarthy2004autoregressive} Thanks to bioinformatics, many techniques have been developed to efficiently model DNA sequences.
+    \begin{itemize}
    
    \item \textbf{DNA sequence models}
    \par{
@@ -171,6 +155,13 @@ And the most common method to study association between genetic variations in mo
         \item Return a binary signal (Anomaly detected or not)
     \end{enumerate}
     }
+ }
+
+ \section{Dataset}
+ {
+    \href{https://www.ncbi.nlm.nih.gov/genbank/}{NCBI} will be our main data source. Through NCBI, we have access to the GenBank genetic sequence database,
+     an annotated collection of all publicly available DNA sequences.
+     As mentioned, Cystic Fibrosis is caused by CFTR mutations and through NCBI  we have access to several CFTR gene sequences that carry a specific CFTR mutation.
  }
 %-------------------------------------------------------------------------
 
