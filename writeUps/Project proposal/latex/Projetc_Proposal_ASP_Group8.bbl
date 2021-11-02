@@ -1,27 +1,39 @@
 \begin{thebibliography}{1}\itemsep=-1pt
 
-\bibitem{krawetz2003introduction}
-
-
 \bibitem{scientific_american}
 "what is known about the function of introns, the nonencoding sequences in
   genes?".
 \newblock {\em Scientific American}, 1999.
 
-\bibitem{forward_backward}
-R.~h.~Sundaram.
-\newblock The baaum-welch algorithm.
-\newblock 2000.
+\bibitem{SNP_cystic_fibrosis}
+H.~BP et~al.
+\newblock Single nucleotide polymorphisms related to cys-tic fibrosis in
+  chronic rhinositus—a pilot study.
+\newblock {\em Int Forum Allergy Rhinol}, 7, 2017.
 
-\bibitem{chakravarthy2004autoregressive}
-C.~Nirnjan et~al.
-\newblock "autoregressive modeling and feature analysis of dna sequences".
-\newblock {\em EURASIP Journal on Applied Signal Processing}, 1(13-28), 2004.
+\bibitem{SNP_identification}
+F.~Gisler et~al.
+\newblock Identification of snps in the cystic fibrosis interactome
+  influencingpulmonary progressionin cystic fibrosis.
+\newblock {\em Eur J. or Human Genetics}, 21, 2013.
 
 \bibitem{posey}
 J.~E. posey.
 \newblock "genome sequencing and implications for rare disorders".
 \newblock {\em Orphanet J Rare Dis}, 14(153), 2019.
+
+\bibitem{riordan1989identification}
+J.~R. Riordan, J.~M. Rommens, B.-s. Kerem, N.~Alon, R.~Rozmahel, Z.~Grzelczak,
+  J.~Zielenski, S.~Lok, N.~Plavsic, J.-L. Chou, et~al.
+\newblock Identification of the cystic fibrosis gene: cloning and
+  characterization of complementary dna.
+\newblock {\em Science}, 245(4922):1066--1073, 1989.
+
+\bibitem{Newborn_screening_for_CF}
+M.~Schmidt et~al.
+\newblock Strategies for newborn screening for cystic fibrosis: A systematic
+  review of health economic evaluations.
+\newblock {\em Journal of cystic fibrosis}, 17, 2018.
 
 \bibitem{singh}
 G.~B. Singh.
@@ -29,9 +41,14 @@ G.~B. Singh.
   Introduction to Bioinformatics"}.
 \newblock Humana Press, Totowa, NJ, 2003.
 
-\bibitem{tommy}
-M.~D.~B. Tommy~Kaplan.
-\newblock {\em Methods in Cell Biology}.
-\newblock 2012.
+\bibitem{disease_modifying_genes}
+M.~Slieker et~al.
+\newblock Disease modifying genes in cystic fibrosis.
+\newblock {\em Journal of cystic fibrosis}, 4, 2005.
+
+\bibitem{tsui1992spectrum}
+L.-C. Tsui.
+\newblock The spectrum of cystic fibrosis mutations.
+\newblock {\em Trends in Genetics}, 8(11):392--398, 1992.
 
 \end{thebibliography}

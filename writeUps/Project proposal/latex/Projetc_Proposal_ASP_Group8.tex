@@ -27,9 +27,9 @@
 %%%%%%%%% TITLE
 \title{Anomalies Detection In DNA Sequences Using Markov Chains}
 
-\author{Prierette M. Mastel \quad Pamely Zantou \quad Florent C. Bang Njenjock \quad Cedric P. E. Manouan \\
+\author{Pierette M. Mastel \quad Pamely Zantou \quad Florent C. Bang Njenjock \quad Cedric P. E. Manouan \\
 Carnegie Mellon University\\
-{\tt\small \{pmahorom, pzantou, fbangnje, cmanouan\}@andrew.cmu.edu}
+{\tt\small \{pmahoro, pzantou, fbangnje, cmanouan\}@andrew.cmu.edu}
 }
 
 \maketitle
@@ -55,30 +55,14 @@ Carnegie Mellon University\\
 %-------------------------------------------------------------------------
 \section{Background and rationale}
  {
-   \begin{itemize}
-      \item \textbf{Genome}
-      \par Genome refers to the complete set of genetic information (hereditary information) found within an individual organism \cite{krawetz2003introduction}.
-        It combines   both the genes and the non-coding sequences of the DNA.
+    \par Cystic fibrosis (CF) is a severe autosomal recessive disease characterized by a varied degree of chronic obstructive lung disease and pancreatic
+    enzyme insufficiency. An elevated sweat electrolyte concentration is another symptoms of (CF) \cite{riordan1989identification}\cite{tsui1992spectrum}.
+    CF is caused by the mutation of Cystic Fibrosis Transmembrane conductance Regulator (CFTR) gene. More specifically, a 3bp deletion of CFTR would remove 
+    the phenylalanine residue at amino acid position 508. Although, the major mutation causing CF is the later, there are almost 300 sequence alterations 
+    identified in the CFTR and responsible of CF. \cite{tsui1992spectrum}. Large deletions spanning multiple exons of the CFTR, multiple substitutions of 
+    a single base pair can be found in many places in the gene.
 
-      \item \textbf{Gene} 
-      \par Gene is the basic physical and functional unit of heredity. Genes are passed on from parent to child. They     are made up of DNA, represent the coded part of DNA and carry a set of specific instructions to code some molecules such as proteins. Humans for example have between 30.000 and 100000 genes \cite{krawetz2003introduction}. There are two classes of genes:
-      \begin{enumerate}
-          \item genes that are transcribed into RNAs and are translated into polypeptide chains.
-          \item genes whose transcripts (tRNAs, rRNAs, snRNAs) are used directly.
-      \end{enumerate}
-
-      \item \textbf{DNA sequence analysis}
-      \par Deoxyribonucleic acid (DNA) is the molecule that contains the genetic code needed to produce molecules of living cells such as
-       proteins. \cite{krawetz2003introduction}. Proteins are made of amino acids and are responsible for many vital functions such as
-        transportation, metabolism, movement, structural support, etc. DNA is formed from 4 basic subunits or nucleotides, namely, adenine
-        (\textbf{A}), cytosine (\textbf{C}), thymine (\textbf{T}), and guanine (\textbf{G}). \cite{chakravarthy2004autoregressive} Although
-         DNA is often found as a single-stranded polynucleotide, it assumes its most stable form when double-stranded. These two strands are complementary
-          and form a double helix weakly bonded by hydrogen bonds between the nucleotides. \textbf{A} in one strand always pairs with a \textbf{T} in
-           the other strand, and each \textbf{C} always pairs with a \textbf{G}. The synthesis of proteins is governed by certain regions in the DNA called protein-coding regions or genes.
-            There are 64 possible nucleotide triplets (\((\text{nucleotide alphabet size})^{\text{word length}} = 4^3 \)) called \textit{codons}, and mapped into 20 amino acids
-             that bond together to form proteins. DNA sequence analysis consists in automatically interpreting DNA sequences and provide the location and function of protein-coding regions.
-              If a given DNA sequence is not a protein-coding regions the next step will be to accurately identify the protein-coding regions and thus predict the protein that will be generated
-               using the information in these segments. \cite{chakravarthy2004autoregressive} Thanks to bioinformatics, many techniques have been developed to efficiently model DNA sequences.
+    \begin{itemize}
    
    \item \textbf{DNA sequence models}
    \par{
@@ -91,6 +75,7 @@ Carnegie Mellon University\\
                In addition, each nucleotide appears independently of the others. The probability of any nucleotide \(X\) to occur in a sequence \(S\) of length \(L_S\) is defined as following (G. Singh et al. 2003):
                \begin{equation}
                    P_X = \frac{n_{X}(S)}{L_S}\\
+                   \label{eq1}
                \end{equation}
                where \(n_X\) is the number of occurrences of the base X in S.\\
                Then the probability of a pattern \(p\) to occur can be obtained with equation \ref{eq2}
@@ -102,7 +87,7 @@ Carnegie Mellon University\\
                
                \item \textbf{Discrete-time Markov chains}: In this model, the value of the random variable X any given time step depends only on the previous value.
                This model has 20 parameters: the probabilities of each nucleotide to occur (\(P_A, P_T, P_C, P_G\)) and the probabilities of each \textit{dinucleotide} to occur (\(P_{AA}, P_{AC}, ...\)).
-               The first set of parameters is computed using equation \ref{eq2}.
+               The first set of parameters is computed using equation \ref{eq1}.
                And the second set of parameters (the transition probabilities) is obtained \cite{singh} using Bayes Rule (\ref{eq3}):\\
                \begin{equation}
                    P(\alpha|\beta) = \frac{P(\alpha \beta)}{P(\beta)}
@@ -114,18 +99,24 @@ Carnegie Mellon University\\
                    P(p|S) = P(p_1)\prod_{i=2}^{L_p} P(p_i)
                 \label{eq4}
                \end{equation}
-               \item \textbf{Hidden Markov Models(HMMs)} \cite{tommy}: They are a family of probabilistic models used to model observations within a series. In this particular model,
-                observations are modeled using another series which is a series of unobserved transitions between the actual states of the model. In HMMs, in addition to transition probabilities, we also have 
-               \textit{emission probabilities} describing the probabilities of getting any output signal in a given state.
-               HMMs are often combined with the forward-backward \cite{forward_backward} algorithm in order to compute the probability of a state at a given position of the DNA Sequence.\\ 
-               
-               \item \textbf{Autoregressive (AR) models}\cite{chakravarthy2004autoregressive}: It is another family of models used in random processes analysis. Their particularity is that a variable is forecasted
-               using a linear combination of its previous values as a regression of the variable against itself.
-        \end{enumerate}
+               \end{enumerate}
        \end{enumerate}
    }
     \end{itemize}
  }
+
+ %-------------------------------------------------------------------------
+\section{Literature review}
+{
+
+Mutations in gene may lead to severe diseases. In the case of Cystic Fibrosis (CF), studies were conduced and revealed that some Single Nucleotide Polymorphisms (SNPs) may be associated with presence of chronic rhinosinusitis (CRS) in certain populations, which is almost always developed by CF patients  \cite[Bejamen Hull et al., 2017]{SNP_cystic_fibrosis}. Identifying those mutations quickly is crucial since they might have a high influence on disease severity in different manners \cite[Franziska Gisler, 2013]{SNP_identification}. 
+Thus, strategies for newborn screening for CF have been evaluated and as a result, it was shown that immunioreactive trypsinogen (IRT), a test that screens for a protein made by the pancreas, seems to be the most cost-efficient among others \cite[Masja Schmidt et al., 2018]{Newborn_screening_for_CF}. In case of a positive initial IRT test, another test or a DNA is carried out. This DNA test can lead to the identification of modifier genes (genes than single mutated gene) which affect disease expression.
+And the most common method to study association between genetic variations in modifier genes and clinical phenotypes is SNPs identification \cite[Martijn Slieker et al., 2005]{disease_modifying_genes}. 
+
+
+}
+%-------------------------------------------------------------------------
+
 %-------------------------------------------------------------------------
 \section{Research questions, aims and objectives}
  {
@@ -164,6 +155,13 @@ Carnegie Mellon University\\
         \item Return a binary signal (Anomaly detected or not)
     \end{enumerate}
     }
+ }
+
+ \section{Dataset}
+ {
+    \href{https://www.ncbi.nlm.nih.gov/genbank/}{NCBI} will be our main data source. Through NCBI, we have access to the GenBank genetic sequence database,
+     an annotated collection of all publicly available DNA sequences.
+     As mentioned, Cystic Fibrosis is caused by CFTR mutations and through NCBI  we have access to several CFTR gene sequences that carry a specific CFTR mutation.
  }
 %-------------------------------------------------------------------------
 
