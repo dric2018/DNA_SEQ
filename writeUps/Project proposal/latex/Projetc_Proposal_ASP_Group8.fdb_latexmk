@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Projetc_Proposal_ASP_Group8"] 1635631040 "Projetc_Proposal_ASP_Group8.aux" "Projetc_Proposal_ASP_Group8.bbl" "Projetc_Proposal_ASP_Group8" 1635631043
+["bibtex Projetc_Proposal_ASP_Group8"] 1636008326 "Projetc_Proposal_ASP_Group8.aux" "Projetc_Proposal_ASP_Group8.bbl" "Projetc_Proposal_ASP_Group8" 1636008330
   "./ieee.bst" 1630148001 19623 f9cd22458ca68af2567100f1aed905e8 ""
-  "Projetc_Proposal_ASP_Group8.aux" 1635631043 3370 389eb1840e42feecffb65fd9bcbed47c "pdflatex"
+  "Projetc_Proposal_ASP_Group8.aux" 1636008329 3370 389eb1840e42feecffb65fd9bcbed47c "pdflatex"
   "egbib.bib" 1635630996 4104 d295946ce90bb199eb56104ba8148cfe ""
   (generated)
   "Projetc_Proposal_ASP_Group8.blg"
   "Projetc_Proposal_ASP_Group8.bbl"
-["pdflatex"] 1635631041 "d:/MSIT1/Fall2021/18-751 ASP/Project/code/writeUps/Project proposal/latex/Projetc_Proposal_ASP_Group8.tex" "Projetc_Proposal_ASP_Group8.pdf" "Projetc_Proposal_ASP_Group8" 1635631043
+["pdflatex"] 1636008327 "d:/MSIT1/Fall2021/18-751 ASP/Project/code/writeUps/Project proposal/latex/Projetc_Proposal_ASP_Group8.tex" "Projetc_Proposal_ASP_Group8.pdf" "Projetc_Proposal_ASP_Group8" 1636008330
   "C:/Users/HP/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1633506144 9713962 341ccb4c26a3053bb10be8f87b8900eb ""
   "C:/Users/HP/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1634882369 82535 0266753fb37a3d673c1d739765ad059f ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -120,16 +120,16 @@
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/tools/enumerate.sty" 1622550326 3468 068d84ef9735e15f11c5a120c0a1a139 ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1622550326 4545 d84d0b20a11b9c36c6ecf45697be591c ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "Projetc_Proposal_ASP_Group8.aux" 1635631043 3370 389eb1840e42feecffb65fd9bcbed47c "pdflatex"
-  "Projetc_Proposal_ASP_Group8.bbl" 1635631040 1897 0c702ec2946e789c08e326c1d44d277f "bibtex Projetc_Proposal_ASP_Group8"
-  "Projetc_Proposal_ASP_Group8.brf" 1635631043 541 ab7b014c0830745c4f93f214d130daf2 "pdflatex"
-  "Projetc_Proposal_ASP_Group8.tex" 1635631036 10370 0966894e36f19f395283cf6db3ef2871 ""
+  "Projetc_Proposal_ASP_Group8.aux" 1636008329 3370 389eb1840e42feecffb65fd9bcbed47c "pdflatex"
+  "Projetc_Proposal_ASP_Group8.bbl" 1636008327 1897 0c702ec2946e789c08e326c1d44d277f "bibtex Projetc_Proposal_ASP_Group8"
+  "Projetc_Proposal_ASP_Group8.brf" 1636008329 541 ab7b014c0830745c4f93f214d130daf2 "pdflatex"
+  "Projetc_Proposal_ASP_Group8.tex" 1636008309 10357 f7b24e4e1cae114635acad7494bae655 ""
   "cvpr.sty" 1631989419 8190 508857d80b75953f4e052e16551f1494 ""
   "cvpr_eso.sty" 1630148001 3878 6aa7c08ff2621006e0603349e40a30a8 ""
-  "d:/MSIT1/Fall2021/18-751 ASP/Project/code/writeUps/Project proposal/latex/Projetc_Proposal_ASP_Group8.tex" 1635631036 10370 0966894e36f19f395283cf6db3ef2871 ""
+  "d:/MSIT1/Fall2021/18-751 ASP/Project/code/writeUps/Project proposal/latex/Projetc_Proposal_ASP_Group8.tex" 1636008309 10357 f7b24e4e1cae114635acad7494bae655 ""
   "eso-pic.sty" 1630148001 9460 d2935ae95b5cd343fcf5887ff530288d ""
   (generated)
   "Projetc_Proposal_ASP_Group8.log"
+  "Projetc_Proposal_ASP_Group8.pdf"
   "Projetc_Proposal_ASP_Group8.brf"
   "Projetc_Proposal_ASP_Group8.aux"
-  "Projetc_Proposal_ASP_Group8.pdf"
