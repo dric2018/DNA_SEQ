@@ -19,11 +19,4 @@ $ conda activate asp
 
 - At this point you might be able to run all the scripts in `src`.
 
-# Usage
-
-- Anomalies detection
-```bash
-
-(asp)$ python detect_anomalies.py --data_source 0 --target_gene 3
-
 ```
